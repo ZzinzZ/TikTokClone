@@ -1,0 +1,22 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Noto+Sans:ital,wght@0,100;1,700&family=Open+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap");
+
+:root {
+  --primary: #fe2c55;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
