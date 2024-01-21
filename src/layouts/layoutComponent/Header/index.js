@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import Tippy from "@tippyjs/react";
@@ -19,12 +19,12 @@ import {
   faMessage,
 } from "@fortawesome/free-regular-svg-icons";
 
-import routesConfig from "~/config/routes";
+import config from "~/config";
 import Search from "../Search";
 import Button from "~/component/Button";
-import images from "../../../../assets/images";
+import images from "../../../assets/images";
 import styles from "./Header.module.scss";
-import Menu from "../../../Popper/Menu";
+import Menu from "~/component/Popper/Menu";
 import Image from '~/component/Image';
 
 
@@ -105,7 +105,7 @@ function Header() {
       <div className={cx("header-content")}>
         {/* Logo */}
         <div className={cx("logo")}>
-          <Link to={routesConfig.home}>
+          <Link to={config.routes.home}>
             <img src={images.logo} alt="Tiktok" />
           </Link>
         </div>
