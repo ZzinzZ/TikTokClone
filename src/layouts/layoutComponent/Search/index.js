@@ -10,9 +10,9 @@ import {
   faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 
-import * as searchSevice  from "~/apiServices/searchSevice";
-import { Wrapper as PopperWarper } from "../../../Popper";
-import AccountItem from "../../../AccoutItem";
+import * as searchSevice  from "~/services/searchSevice";
+import { Wrapper as PopperWarper } from "~/component/Popper";
+import AccountItem from "~/component/AccoutItem";
 import { useDebounce } from "~/hooks";
 
 const cx = classNames.bind(styles);
@@ -55,9 +55,9 @@ function Search() {
     if (!searchValue.startsWith(" ")) setSearchValues(searchValue);
   };
 
-  const handleSubmit = (e) => {
-
-  };
+  // const handleSubmit = (e) => {
+  //   console.log('submit');
+  // };
 
   const handleHideResults = () => {
     setShowResults(false);
