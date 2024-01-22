@@ -1,5 +1,1 @@
-function Upload() {
-    return (  <>Upload page</>);
-}
-
-export default Upload;
+export {default} from './Upload';
